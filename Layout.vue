@@ -9,7 +9,7 @@ const { Layout } = DefaultTheme
 <template>
     <Layout>
         <template #doc-before>
-            <div v-if="adUnits.length" :id="`waldo-tag-${adUnits[0]}`"></div>
+            <div v-if="adUnits.length" :id="`waldo-tag-${adUnits[0]}`" style="padding-bottom: 2em;"></div>
         </template>
         <template #doc-after>
             <div v-if="adUnits.length" :id="`waldo-tag-${adUnits[1]}`"></div>

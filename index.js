@@ -19,13 +19,12 @@ import Tabs from './components/Tabs.vue'
 import Btn from './components/Btn.vue'
 import BtnToggler from './components/BtnToggler.vue'
 
+import Layout from './Layout.vue'
+
 /** @type {import('vitepress').Theme} */
 export default {
   extends: DefaultTheme,
-  Layout: () => {
-    return h(DefaultTheme.Layout, null, {
-    })
-  },
+  Layout: Layout,
   enhanceApp({ app, router, siteData }) {
     app.component('font-awesome-icon', FontAwesomeIcon),
     app.component('Tab', Tab),

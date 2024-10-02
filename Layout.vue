@@ -11,7 +11,10 @@ const { Layout } = DefaultTheme
         <template #doc-before>
             <div v-if="adUnits.length" :id="`waldo-tag-${adUnits[0]}`" style="padding-bottom: 2em;"></div>
         </template>
-        <template #doc-after>
+        <template #home-hero-after>
+            <div v-if="adUnits.length" :id="`waldo-tag-${adUnits[0]}`" style="margin-top: 3em;"></div>
+        </template>
+        <template #layout-bottom>
             <div v-if="adUnits.length" :id="`waldo-tag-${adUnits[1]}`"></div>
         </template>
     </Layout>

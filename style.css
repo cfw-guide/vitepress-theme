@@ -204,3 +204,22 @@ input[type="radio"] {
 }
 
 /* hacks-guide change end: tone down light mode bg */
+
+/* hacks-guide change start: add Vita buttons */
+kbd {
+	&.l {
+		border-radius: 15px 6px 6px 6px;
+		padding: 0 3px 0 7px;
+	}
+
+	&.r {
+		border-radius: 6px 15px 6px 6px;
+		padding: 0 7px 0 3px;
+	}
+
+	&.face {
+		padding: 0 6px;
+		border-radius: 15px;
+	}
+}
+/* hacks-guide change end: add Vita buttons */

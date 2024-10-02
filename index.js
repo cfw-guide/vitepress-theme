@@ -16,6 +16,9 @@ library.add(faMagnet)
 import Tab from './components/Tab.vue'
 import Tabs from './components/Tabs.vue'
 
+import Btn from './components/Btn.vue'
+import BtnToggler from './components/BtnToggler.vue'
+
 /** @type {import('vitepress').Theme} */
 export default {
   extends: DefaultTheme,
@@ -26,6 +29,8 @@ export default {
   enhanceApp({ app, router, siteData }) {
     app.component('font-awesome-icon', FontAwesomeIcon),
     app.component('Tab', Tab),
-    app.component('Tabs', Tabs)
+    app.component('Tabs', Tabs),
+    app.component('Btn', Btn),
+    app.component('BtnToggler', BtnToggler)
   }
 }
